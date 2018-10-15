@@ -1,0 +1,17 @@
+<cdp-header></cdp-header>
+
+<div class="container-fluid bg-success" style="height: 80vh;padding: 0">
+  <swiper *ngIf="type == 'component' && show" class="swiper-container" [config]="config" (indexChange)="onIndexChange($event)" fxFlex="auto">
+    <div class="swiper-slide ">
+      <cdp-slider1 class="w-100"></cdp-slider1> 
+    </div>
+    <div class="swiper-slide">
+      <cdp-slider2 [visible]="visible" class="w-100"></cdp-slider2>
+    </div>
+    <div class="swiper-slide">
+      <cdp-slider3 class="w-100"></cdp-slider3>
+    </div>
+  </swiper>
+</div>
+
+<cdp-footer></cdp-footer>

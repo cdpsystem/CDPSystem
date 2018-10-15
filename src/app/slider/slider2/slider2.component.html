@@ -1,0 +1,12 @@
+<div class="container-fluid d-flex">
+
+	<div class="row w-100 justify-content-center align-self-center" [@popOverState]="stateName">
+
+		<div class="col-sm-3 col-xl-2 m-xl-2 card-image text-center" [ngClass]="{'card-image-visible': show}" *ngFor="let card of cardArray">
+			<img [src]="card.src">
+			<hr>
+			<h5>{{card.title}}</h5>
+		</div>
+
+	</div>		
+</div>

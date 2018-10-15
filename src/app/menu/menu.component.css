@@ -1,0 +1,7 @@
+.header-menu{
+	height: 10vh;
+	transition: height 0.25s ease-in;
+}
+.header-menu-small{
+	height: 5vh;
+}

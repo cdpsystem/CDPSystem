@@ -1,0 +1,11 @@
+<off-login 
+	*ngIf="!this._isLogged"
+	(logged)="setLoginStatus($event)" 
+	></off-login>
+<div (mousemove)="toggleVisible($event)" style="height: 100vh" *ngIf="this._isLogged">
+	<off-header></off-header>
+	<div class="router-body bg-light">
+		<router-outlet></router-outlet>
+	</div>	
+	<off-footer [error]="_error" [visible]="_visible"></off-footer>
+</div>

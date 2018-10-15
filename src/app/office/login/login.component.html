@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-center align-items-center bg-dark" style="height: 100vh">
+	<div class="p-2">
+		<div class="p-2 container-fluid login-box" >
+
+			<div class="row">
+				<div class="col-xl-12">
+					<h4 class="text-center">CDPSystem Loggin</h4>
+				</div>
+			</div>
+
+			<form #formLogin="ngForm" (ngSubmit)="login(formLogin)">
+				<div class="row p-2">
+					<div class="col-xl-6">
+						<input name="user" #user="ngModel" [(ngModel)]="_login.user" type="text" class="form-control" placeholder="Usuario">						
+					</div>
+	 
+					<div class="col-xl-6">
+						<input #pass="ngModel" name="pass" [(ngModel)]="_login.pass" type="password" class="form-control" placeholder="Contraseña">				
+					</div>
+
+				</div>
+
+				<div class="row p-2">
+					<div class="col-xl-12">
+						<input style="width: 100%;" class="btn btn-primary" type="submit" value="Conectar" name="">
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+</div>
